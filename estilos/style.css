@@ -4,3 +4,144 @@
     --verde: #49a09d; 
     --lilás: #5f2c82;
 }
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color: var(--lilás);
+}
+
+
+div#formulario{
+    background-color: aliceblue;
+    width: 250px;
+    height: 315;
+    border-radius: 0px 0px 20px 20px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+}
+
+div#formulario > h1{
+    text-align: center;
+    padding: 10px;
+}
+
+div#formulario > p{
+    line-height: 15px;
+    font-size: 0.9em;
+    padding-bottom: 8px;
+}
+
+p#email1{
+    background-color: #5f2c82;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+p#isenha{
+    background-color: #5f2c82;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+input#iemail{
+    display: block;
+    background-color: rgb(172, 255, 227);
+    position: relative;
+    left: 45px;
+    padding: 5px;
+    width: 179px;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    bottom: 30px;
+}
+
+input#isenha{
+    display: block;
+    background-color: rgb(172, 255, 227);
+    position: relative;
+    left: 45px;
+    padding: 5px;
+    width: 179px;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    bottom: 30px;
+}
+
+div#imagem > img{
+    width: 270px;
+    height: 200px;
+    border-radius: 20px 20px 00px 0px;
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    top: 50px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+}
+
+input#entrar{
+    background-color: #49a09d;
+    border: none;
+    width: 230px;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input#entrar:hover{
+    background-color: #2e6967;
+}
+
+input#esq{
+    background-color: #ffffff;
+    border: 2px solid #49a09d;
+    width: 230px;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    color: #2e6967;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input#esq:hover{
+    background-color: #71e9e5af;
+}
+
+#icon1{
+    color: #ffffff;
+    font-size: 30px;
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 7px;
+}
+
+#icon2{
+    color: #ffffff;
+    font-size: 30px;
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 7px;
+}

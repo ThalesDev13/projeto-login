@@ -13,13 +13,28 @@
     <main>
         <section id="login">
             <div id="imagem">
-
+                <img src="imagens/metal.jpg" alt="">
             </div>
 
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post">
+                    <p id="email1">
+                        <label for="iemail"><i class="fa-solid fa-user" id="icon1"></i></label>
+                        <input type="email" name="e-mail" id="iemail" required placeholder="seu e-mail">
+                    </p>
+
+                    <p id="isenha">
+                        <label for="isenha"><i class="fa-solid fa-key" id="icon2"></i></label>
+                        <input type="password" name="senha" id="isenha" required placeholder="sua senha" min="6" max="12">
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Entrar" id="entrar">
+                        <input type="button" value="Esqueci a senha 🖂" id="esq">
+                    </p>
+                </form>
             </div>
         </section>
     </main>
