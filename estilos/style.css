@@ -6,142 +6,49 @@
 }
 
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html, body{
+    height: 100vh;
+    width: 100vw;
     background-color: var(--lilás);
 }
 
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
 
-div#formulario{
-    background-color: aliceblue;
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
     width: 250px;
-    height: 315;
-    border-radius: 0px 0px 20px 20px;
-    display: block;
-    margin: auto;
-    margin-top: 50px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+    height: 500px;
+    border-radius: 20px;
+    border-radius: 0px 0px 10px rgba(0, 0, 0, 0.452);
+
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
-div#formulario > h1{
-    text-align: center;
-    padding: 10px;
-}
-
-div#formulario > p{
-    line-height: 15px;
-    font-size: 0.9em;
-    padding-bottom: 8px;
-}
-
-p#email1{
-    background-color: #5f2c82;
-    padding: 3px;
-    margin: 5px;
-    border-radius: 5px;
-    height: 35px;
-}
-
-p#isenha{
-    background-color: #5f2c82;
-    padding: 3px;
-    margin: 5px;
-    border-radius: 5px;
-    height: 35px;
-}
-
-input#iemail{
-    display: block;
-    background-color: rgb(172, 255, 227);
-    position: relative;
-    left: 45px;
-    padding: 5px;
-    width: 179px;
-    border: none;
-    border-radius: 5px;
-    height: 25px;
-    bottom: 30px;
-}
-
-input#isenha{
-    display: block;
-    background-color: rgb(172, 255, 227);
-    position: relative;
-    left: 45px;
-    padding: 5px;
-    width: 179px;
-    border: none;
-    border-radius: 5px;
-    height: 25px;
-    bottom: 30px;
-}
-
-div#imagem > img{
-    width: 270px;
+section#login > div#imagem{
+    background: var(--lilás) url(../imagens/metal.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
     height: 200px;
-    border-radius: 20px 20px 00px 0px;
+}
+
+section#login > div#formulario{
     display: block;
-    margin: auto;
-    margin-top: 70px;
-    top: 50px;
-    position: relative;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
-}
-
-input#entrar{
-    background-color: #49a09d;
-    border: none;
-    width: 230px;
-    margin: auto;
-    display: block;
-    padding: 15px;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-input#entrar:hover{
-    background-color: #2e6967;
-}
-
-input#esq{
-    background-color: #ffffff;
-    border: 2px solid #49a09d;
-    width: 230px;
-    margin: auto;
-    display: block;
-    padding: 15px;
-    color: #2e6967;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-input#esq:hover{
-    background-color: #71e9e5af;
-}
-
-#icon1{
-    color: #ffffff;
-    font-size: 30px;
-    display: block;
-    position: relative;
-    top: 3px;
-    left: 7px;
-}
-
-#icon2{
-    color: #ffffff;
-    font-size: 30px;
-    display: block;
-    position: relative;
-    top: 3px;
-    left: 7px;
+    padding: 10px;
 }
